@@ -1,0 +1,12 @@
+package com.microservice.RatingService.exception;
+
+public class ResourceNotFoundException extends RuntimeException {
+    public ResourceNotFoundException(String s) {
+        super(s);
+    }
+
+    public ResourceNotFoundException(){
+        super("Rating doesn't exist with the provided id");
+    }
+}
+
